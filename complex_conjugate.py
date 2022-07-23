@@ -36,5 +36,6 @@ if __name__ == '__main__':
 		    linestyle='--', color='lightblue')
 	axes.set_title(f'Compex number ({z[0]}, {z[1]}) and its conjugate',
 		           x=0.5, y=-0.1, fontweight='semibold')
+	plt.savefig(f'Compex number ({z[0]}, {z[1]}) and its conjugate.jpg')
 	plt.show()
 
