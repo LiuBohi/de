@@ -1,0 +1,33 @@
+\documentclass{article}
+\usepackage{amsthm}
+\usepackage{amsfonts}
+\usepackage{xcolor}
+
+\begin{document}
+I think the main line of this section on Sturm-Liouville problem is the following:
+\begin{itemize}
+\item Definition of Sturm-Liouville problems.
+\item Transform of boundary value problems to Sturm-Liouville problems.
+\item Properties of regular Sturm-Liouville problems, including:
+\begin{enumerate}
+\item[a] infinite number of real eigenvalues, with $\lambda_1 < \lambda_2 \ldots \lambda_n < \ldots$
+\item[b] there is eigenfunctions cooreponding to each eigenvalue.
+\item[c] eigenfunctions are linearly independent, meaning they form a basis for our function spaces $\mathbb{C}^{2}([a, b])$
+\item[d] eigenfunctions are orthogonal 
+\end{enumerate}
+
+I think the properties a and b help us find eigenfunctions, property c guarranties that our unknow solution function in the $\mathbb{C}^{2}([a, b])$ spaces can be expanded with the eigenfucntion as a basis. And property d helps us find the cooefficient for this expansion. 
+\item properties of self-adjoint operators, like boundary value problems with periodic boundary conditions.
+\begin{enumerate}
+\item[a] infinite number of eigen values, with $\lambda_1 < \lambda_2 \ldots \lambda_n < \ldots$, eigenvalues may not be simple
+\item[b] there is a set of eigenfunctions that can be a basis of $\mathbb{C}^{2}([a, b])$ spaces, where our unknow function lives
+\item[c] eigenfunctions are orthogonal
+\end{enumerate}
+
+\end{itemize}
+
+I suggest you make it clear\textbf{that we use properties of SL problem to find our unknow function as a solution, we also use the more general properties of self-adjoint propblems to find our unknow functions}.
+
+\color{red} \textbf{
+There is one more questiosn to solve: how to identify our problem as general self-adjoint or Sturm-Liouville problems? I suggest that you summarize the assumpions for the equation, or transformation of the equation to make it SL or self-adjoint.(By the way, does transform of the equation changes the boundary conditions?). And more importantly, we need instructions or processes to check that boundary conditions actually make the problem SL or self-adjoint. Afterall, nobody will tell us this is SL problems or self-adjoint problems in the wild nature.}
+\end{document}

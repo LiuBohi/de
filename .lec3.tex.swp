@@ -1,0 +1,74 @@
+\documentclass[11pt]{article}
+\usepackage{amsthm}
+\usepackage{amsfonts}
+\usepackage{xcolor}
+
+
+\newtheorem{definition}{Definition}
+\newtheorem{example}{Example}
+
+    \title{Lecture 1: Norm and Hilbert Space}
+    \author{Liu Bo}
+    \date{June 25, 2020}
+
+\begin{document}
+\maketitle
+
+\section{Complex number}
+\begin{definition}[Complex number]
+Complex number [ ], which is quivalent to:
+
+\begin{enumerate}
+\item Set of opints in $\mathbb{R}^2$;
+\item Set of free vectors on a plane;
+\item Set of ordered pairs of real numbers $(x, y)$.
+\end{enumerate}
+\end{definition}
+How do identify a specific complex number? Use below:
+\begin{displaymath}
+z = x\cdot + y\cdot i = x + yi = x + yj = x + jy = re^{j\theta}
+\end{displaymath}
+Euler form for a complex number:
+\begin{displaymath}
+e^{j\theta} = \cos{\theta} + j\sin{\theta}
+\end{displaymath}
+
+where $r = \sqrt{x^2+y^2}$, $\sin{\theta} = y/r$, $\cos{\theta} = x/r$.
+
+\begin{definition}[Complex conjugate]
+\begin{displaymath}
+z^\ast = \overline{z} = (x + jy)^\ast = \overline{x + jy} = x - jy
+\end{displaymath}
+\end{definition}
+
+\begin{definition}[Complex field]
+A field has the following foure operations defined:
+\begin{enumerate}
+\item addtiion: $z_{1}+z_{2} = x_{1} + x_{2} + j(y_{1+y_2})$
+\item substraction: $z_{1} - z_{2} = (x_{1} - x_{2}) + j(y_{1} - y_{2})$
+\item multiply: $z_{1} z_{2} = (x_{1} x_{2} - y_{1} y_{2} + j(x_{1} y_{2} + x_{2} y_{1}$
+\item division:
+\end{enumerate}
+\end{definition}
+
+\begin{example}
+\begin{displaymath}
+j\cdot j = j^2 = -1
+\end{displaymath}
+\end{example}
+
+\begin{example}
+\begin{displaymath}
+\sqrt{3 + 4j} = \sqrt{5e^{j\theta}} = \sqrt{5}e^{j\theta/2},
+\end{displaymath}
+where $\sin{\theta} = 4 / 5$, $\cos{\theta} = 3 / 5$.
+\end{example}
+
+\begin{example}
+\begin{displaymath}
+\sqrt[3]{3 + 4j} = (5e^{j\theta})^{1/3} = \sqrt[3]{5}e^{(j\theta + 2\pi k)/3},
+\end{displaymath}
+where $\sin{\theta} = 4 / 5$, $\cos{\theta} = 3 / 5$.
+\end{example}
+
+\end{document}
